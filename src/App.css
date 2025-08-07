@@ -1,0 +1,94 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  line-height: 1.5;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 32px 0;
+}
+
+section {
+  margin-block: 32px;
+}
+
+section.add_product {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.form_wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+
+  label {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+  }
+}
+
+section.product_list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.product_item {
+  border: 1px solid #000;
+  padding: 12px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  position: relative;
+
+  img {
+    margin-block-end: 8px;
+  }
+
+  h5 {
+    font-size: 18px;
+    text-transform: capitalize;
+  }
+
+  p {
+    text-transform: capitalize;
+  }
+
+  span {
+    margin-block-end: 8px;
+  }
+
+  button {
+    margin-top: auto;
+  }
+}
+
+.edit_product {
+  width: 36px;
+  aspect-ratio: 1 / 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  background-color: #ed6c02;
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  cursor: pointer;
+}
