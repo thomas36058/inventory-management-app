@@ -33,13 +33,6 @@ body {
   align-items: flex-end;
 }
 
-.product-list {
-  margin-block: 32px;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 16px;
-}
-
 /* ===== BLOCK: add-product ===== */
 
 .add-product__field {
@@ -65,86 +58,7 @@ body {
   color: gray;
 }
 
-/* ===== BLOCK: product-item ===== */
-
-.product-item {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-}
-
-.product-item__image {
-  width: 100%;
-  object-fit: cover;
-}
-
-.product-item__content {
-  padding: 12px;
-  border: 1px solid #000;
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
-}
-
-.product-item__name {
-  font-size: 18px;
-  text-transform: capitalize;
-}
-
-.product-item__category {
-  text-transform: capitalize;
-}
-
-.product-item__status {
-  margin-bottom: 8px;
-  font-weight: bold;
-}
-
-.product-item__status--available {
-  color: green;
-}
-
-.product-item__status--unavailable {
-  color: red;
-}
-
-.product-item__delete,
-.product-item__edit {
-  width: 36px;
-  aspect-ratio: 1 / 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  top: 0;
-  cursor: pointer;
-}
-
-.product-item__delete {
-  background-color: red;
-  left: 0;
-}
-
-.product-item__edit {
-  background-color: #ed6c02;
-  right: 0;
-}
-
-/* ===== BLOCK: edit-product ===== */
-
-.edit-product {
-  width: 36px;
-  aspect-ratio: 1 / 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 100%;
-  background-color: #ed6c02;
-  position: absolute;
-  top: 12px;
-  right: 12px;
-  cursor: pointer;
-}
-
+/* ===== BLOCK: modal_addProduct ===== */
 .modal_addProduct__content {
   position: absolute;
   top: 50%;
@@ -157,6 +71,7 @@ body {
   padding: 32px;
 }
 
+/* ===== BLOCK: utils ===== */
 .input--visually-hidden {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);

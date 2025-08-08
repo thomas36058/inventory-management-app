@@ -62,7 +62,7 @@ export const ModalEditProduct: React.FC<ModalEditProductProps> = ({
               sx={{
                 height: 250,
                 mb: 3,
-                objectFit: "cover",
+                objectFit: "contain",
               }}
               loading="lazy"
             />

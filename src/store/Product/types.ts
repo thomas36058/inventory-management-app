@@ -3,7 +3,7 @@ export interface ProductProps {
   name: string;
   category: string;
   image: string;
-  available?: boolean;
+  available: boolean;
 }
 
 export interface ProductState {
@@ -20,10 +20,10 @@ export interface ProductCardProps {
 
 export type ModalEditProductProps = {
   open: boolean;
-  editedProduct: ProductCardProps["product"];
+  editedProduct: Omit<ProductProps, "id">;
   handleClose: () => void;
   setEditedProduct: React.Dispatch<
-    React.SetStateAction<ProductCardProps["product"]>
+    React.SetStateAction<Omit<ProductProps, "id">>
   >;
   onSubmit: () => void;
 };
