@@ -29,8 +29,9 @@ body {
 .inventory__add-product {
   margin-block: 32px;
   display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 22px;
 }
 
 /* ===== BLOCK: add-product ===== */
@@ -39,6 +40,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 4px;
+  width: 100%;
 }
 
 .add-product__field label {
@@ -56,6 +58,12 @@ body {
   font-weight: bold;
   font-size: 18px;
   color: gray;
+}
+
+.product-list table tr td:last-child {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
 /* ===== BLOCK: modal_addProduct ===== */
@@ -82,4 +90,22 @@ body {
   left: 0;
   white-space: nowrap;
   width: 1px;
+}
+
+/* ===== Media query: Dekstop(>= 920px) ===== */
+@media (min-width: 920px) {
+  .inventory__add-product {
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-direction: row;
+    gap: 0;
+  }
+
+  .add-product__field {
+    width: auto;
+  }
+
+  .product-list table tr td:last-child {
+    display: table-cell;
+  }
 }
