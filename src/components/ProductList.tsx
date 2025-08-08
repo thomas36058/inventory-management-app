@@ -87,12 +87,16 @@ export const ProductList: React.FC = () => {
                       }}
                     />
                   </TableCell>
-                  <TableCell>{product.available ? "Sim" : "Não"}</TableCell>
+                  <TableCell
+                    sx={{ color: product.available ? "green" : "red" }}
+                  >
+                    {product.available ? "Em estoque" : "Fora de estoque"}
+                  </TableCell>
                   <TableCell>
                     <Button
                       variant="outlined"
                       size="small"
-                      onClick={() => handleOpen(product)} // ← passando produto aqui
+                      onClick={() => handleOpen(product)}
                       sx={{ mr: 1 }}
                     >
                       Editar

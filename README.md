@@ -18,10 +18,6 @@ npm install
   npm run start
   ```
 
-  ```
-
-  ```
-
 - **Rodar testes:**
   ```bash
   npm test

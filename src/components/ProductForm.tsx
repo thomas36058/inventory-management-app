@@ -68,6 +68,7 @@ export const ProductForm: React.FC = () => {
         <TextField
           required
           label="Nome"
+          id="product-name"
           variant="standard"
           value={newProductForm.name}
           onChange={(e) =>
@@ -77,10 +78,11 @@ export const ProductForm: React.FC = () => {
       </div>
 
       <div className="add-product__field">
-        <label htmlFor="image" className="add-product__label">
+        <InputLabel htmlFor="product-image" className="add-product__label">
           Imagem
-        </label>
+        </InputLabel>
         <Button
+          id="product-image"
           component="label"
           role={undefined}
           variant="outlined"
@@ -100,7 +102,9 @@ export const ProductForm: React.FC = () => {
 
       <div className="add-product__field">
         <FormControl variant="standard" sx={{ minWidth: 220 }}>
-          <InputLabel id="product-category">Categoria</InputLabel>
+          <InputLabel htmlFor="product-category" className="add-product__label">
+            Categoria
+          </InputLabel>
           <Select
             labelId="product-category"
             value={newProductForm.category}
