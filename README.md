@@ -20,12 +20,12 @@ npm install
 
 - **Rodar testes:**
   ```bash
-  npm test
+  npm run test-coverage
   ```
 
 ## Demonstração funcional
 
-Após instalar as dependências e iniciar o servidor de desenvolvimento (`npm run dev`), acesse [http://localhost:5173](http://localhost:5173) no seu navegador.
+Após instalar as dependências e iniciar o servidor de desenvolvimento (`npm run start`), acesse [http://localhost:5173](http://localhost:5173) no seu navegador.
 
 ### Funcionalidades principais
 
@@ -40,7 +40,3 @@ Após instalar as dependências e iniciar o servidor de desenvolvimento (`npm ru
 2. Preencha os campos obrigatórios e salve.
 3. O produto aparecerá na lista de inventário.
 4. Utilize as opções de editar ou remover conforme necessário.
-
----
-
-Sinta-se à vontade para contribuir
