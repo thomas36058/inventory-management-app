@@ -102,6 +102,13 @@ body {
   width: 1px;
 }
 
+/* ===== BLOCK: product-filter ===== */
+.product-filter {
+  font-size: 18px;
+  margin-block-end: 32px;
+  color: gray;
+}
+
 /* ===== Media query: Dekstop(>= 920px) ===== */
 @media (min-width: 920px) {
   .inventory__add-product {

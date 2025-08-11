@@ -10,11 +10,11 @@ import {
   TableRow,
 } from "@mui/material";
 import { useProductStore } from "../store/Product/productStore";
-import type { ProductProps } from "../store/Product/types";
+import type { ProductListProps, ProductProps } from "../store/Product/types";
 import React from "react";
 import { ModalEditProduct } from "./ModalEditProduct";
 
-export const ProductList: React.FC = () => {
+export const ProductList: React.FC<ProductListProps> = ({ productsList }) => {
   const { products, deleteProduct, editProduct } = useProductStore();
   const [open, setOpen] = React.useState(false);
 
@@ -69,7 +69,7 @@ export const ProductList: React.FC = () => {
               </TableRow>
             </TableHead>
             <TableBody>
-              {products.map((product: ProductProps) => (
+              {productsList.map((product: ProductProps) => (
                 <TableRow key={product.id}>
                   <TableCell>{product.id}</TableCell>
                   <TableCell>{product.name}</TableCell>

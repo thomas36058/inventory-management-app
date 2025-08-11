@@ -27,3 +27,7 @@ export type ModalEditProductProps = {
   >;
   onSubmit: () => void;
 };
+
+export interface ProductListProps {
+  productsList: ProductProps[];
+}
