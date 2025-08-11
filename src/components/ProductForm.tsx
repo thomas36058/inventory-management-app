@@ -89,7 +89,7 @@ export const ProductForm: React.FC = () => {
           tabIndex={-1}
           className="add-product__button"
         >
-          {imageFileName || "Nova Imagem"}
+          {imageFileName || "Selecionar Imagem"}
           <input
             type="file"
             accept="image/*"

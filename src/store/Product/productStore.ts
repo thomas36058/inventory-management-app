@@ -9,9 +9,13 @@ export const useProductStore = create<ProductState>()(
         products: [],
 
         addProduct: (product) =>
-          set((state) => ({
-            products: [...state.products, { ...product, id: Date.now() }],
-          })),
+          set(
+            (state) => ({
+              products: [...state.products, { ...product, id: Date.now() }],
+            }),
+            false,
+            "ADD_PRODUCT"
+          ),
 
         deleteProduct: (id) =>
           set((state) => ({

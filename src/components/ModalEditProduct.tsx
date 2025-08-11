@@ -72,7 +72,7 @@ export const ModalEditProduct: React.FC<ModalEditProductProps> = ({
               variant="outlined"
               tabIndex={-1}
             >
-              Nova Imagem
+              Selecionar Nova Imagem
               <input
                 type="file"
                 accept="image/*"

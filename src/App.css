@@ -21,12 +21,13 @@ body {
   padding: 32px 0;
 }
 
-/* ===== BLOCK: inventory ===== */
+/* ===== inventory ===== */
 .inventory__title {
   text-transform: uppercase;
   font-size: 22px;
   margin-bottom: 16px;
   text-align: center;
+  color: gray;
 }
 
 .inventory__add-product {
@@ -35,10 +36,13 @@ body {
   flex-direction: column;
   align-items: flex-start;
   gap: 22px;
+
+  border: 1px solid gray;
+  padding: 12px 22px;
+  border-radius: 12px;
 }
 
-/* ===== BLOCK: add-product ===== */
-
+/* ===== add-product ===== */
 .add-product__field {
   display: flex;
   flex-direction: column;
@@ -54,14 +58,16 @@ body {
 }
 
 .add-product__submit {
-  align-self: flex-end;
+  align-self: center;
+  height: -webkit-fill-available;
 }
 
-/* ===== BLOCK: product-list ===== */
+/* ===== product-list ===== */
 .product-list__empty {
   font-weight: bold;
   font-size: 18px;
   color: gray;
+  text-align: center;
 }
 
 .product-list table tr td:last-child {
@@ -70,7 +76,7 @@ body {
   gap: 8px;
 }
 
-/* ===== BLOCK: modal_addProduct ===== */
+/* ===== Modal ===== */
 .modal_addProduct__content {
   position: absolute;
   top: 50%;
@@ -111,5 +117,9 @@ body {
 
   .product-list table tr td:last-child {
     display: table-cell;
+  }
+
+  .add-product__submit {
+    align-self: flex-end;
   }
 }
